@@ -483,7 +483,7 @@ GstElement* GstCameraPlugin::Impl::CreateEncoder()
     else
     {
         encoder = gst_element_factory_make("x264enc", nullptr);
-        g_object_set(G_OBJECT(encoder), "bitrate", 800, "speed-preset", 6,
+        g_object_set(G_OBJECT(encoder), "bitrate", 2000, "speed-preset", 1,
             "tune", 4, "key-int-max", 10, nullptr);
     }
     return encoder;
